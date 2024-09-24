@@ -1,15 +1,30 @@
 #include <iostream>
 int main() {
-    double a,b;
-    bool tf;
-    //С логическим типом
-    std::cout << "Введите a,b: ";
-    std::cin >> a >> b;
-    (a>b)?tf=true:tf=false;
-    (tf==true)?std::cout << "a: " << a << " большее" << std::endl :(a==b)?std::cout << "a и b равны" << std::endl :std::cout << "b: " << b << " большее" << std::endl;
-    //Без логического типа
-    std::cout << "Введите a,b: ";
-    std::cin >> a >> b;
-    (a>b)?std::cout << "a: " << a << " большее":(a==b)?std::cout << "a и b равны":std::cout << "b: " << b << " большее";
-    return 0;
+ double x,y;
+ std::cout << "Введите x, y: ";
+ std::cin >> x >> y;
+ bool tf;
+ //с логическим типом
+ if (x > y) {
+    tf = true;
+ } else {
+    tf = false;
+ }
+ if (tf == true) {
+    std::cout << "x: " << x << " большее" << std::endl;
+ } else if (x == y) {
+   std::cout << "x и y равны" << std::endl; 
+ } else {
+    std::cout << "y: " << y << " большее" << std::endl;
+ }
+ //без логического типа
+ std::cout << "Введите x, y: ";
+ std::cin >> x >> y;
+ if (x > y) {
+    std::cout << "x: " << x << " большее";
+ } else if (x == y) {
+ std::cout << "x и y равны"; 
+ } else {
+    std::cout << "y: " << y << " большее" << std::endl;
+ }
 }
