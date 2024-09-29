@@ -27,4 +27,5 @@ int main() {
  } else {
     std::cout << "y: " << y << " большее" << std::endl;
  }
+ return 0;
 }
